@@ -17,11 +17,7 @@ class FilterableProductTable extends Component {
       <div className="FilterableProductTable">
         <h1>Iron Store</h1>
         <SearchBar />
-        {
-          this.state.products.map((product, index) => {
-            return <ProductTable key={index} {...product} />
-          })
-        }
+        <ProductTable products={this.state.product} />
       </div>
     )
   };

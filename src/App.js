@@ -10,7 +10,7 @@ class App extends Component {
         {
           console.log(data)
         }
-        <FilterableProductTable productsArray={data} />
+        <FilterableProductTable productsArray={data.data} />
       </div>
     );
   }

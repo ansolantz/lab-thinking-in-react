@@ -16,9 +16,8 @@ class ProductTable extends Component {
           </thead>
           <tbody>
             {
-              this.state.products.map((product, index) =>
+              this.props.products.map((product, index) =>
                 <ProductRow key={index} {...product} />)
-
             }
           </tbody>
         </table>
